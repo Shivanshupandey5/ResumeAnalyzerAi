@@ -104,6 +104,7 @@ try {
 
       console.log("FINAL DATA:", data);
       setStatusText("Analysis complete");
+      navigate(`/resume/${data.id}`);
 
     } catch (err: any) {
       console.error(err);
