@@ -2,7 +2,6 @@ import { useEffect, useState, type JSX } from "react";
 import { Link } from "react-router";
 import ScoreCircle from "~/components/ScoreCircle";
 import { usePuterStore } from "~/lib/puter";
-import { resume } from "constants/index";
 
 
 const ResumeCard: ({resume}:{resume:Resume})=> JSX.Element = ({resume:{id,companyName,jobTitle,feedback,imagePath}}:{resume:Resume}) =>{

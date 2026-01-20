@@ -16,11 +16,11 @@ const WipeApp = () => {
         loadFiles();
     }, []);
 
-    // useEffect(() => {
-    //     if (!isLoading && !auth.isAuthenticated) {
-    //         navigate("/auth?next=/wipe");
-    //     }
-    // }, [isLoading]);
+    useEffect(() => {
+        if (!isLoading && !auth.isAuthenticated) {
+            navigate("/auth?next=/wipe");
+        }
+    }, [isLoading]);
 
     const handleDelete = async () => {
         files.forEach(async (file) => {

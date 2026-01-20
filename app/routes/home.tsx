@@ -71,7 +71,7 @@ export default function Home() {
       )}
 
       {!loadingResumes && resumes.length > 0 && (
-        <div className="resume-section">
+        <div className="resume-section grid grid-cols-2 gap-6 max-lg:grid-cols max-sm:grid-cols-1">
           {resumes.map((resume) => (
             <ResumeCard key={resume.id} resume={resume}/>
           ))}
